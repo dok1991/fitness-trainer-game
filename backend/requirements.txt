@@ -1,5 +1,5 @@
-fastapi==0.104.1
-uvicorn==0.24.0
+fastapi==0.68.0
+uvicorn==0.15.0
 sqlalchemy==1.4.46
 pg8000==1.30.4
 pydantic==1.10.12
