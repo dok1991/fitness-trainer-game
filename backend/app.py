@@ -75,7 +75,11 @@ def leaderboard():
         limit = request.args.get('limit', 10, type=int)
         db = next(get_db())
         
-        scores = db.query(GameScore, User).join(User).order_by(desc(GameScore.score)).limit(limit).all()
+        # Исправленный JOIN запрос
+        scores = db.query(GameScore, User).\
+            join(User, GameScore.user_id == User.id).\
+            order_by(desc(GameScore.score)).\
+            limit(limit).all()
         
         leaderboard = []
         for score, user in scores:
@@ -90,7 +94,8 @@ def leaderboard():
         return jsonify(leaderboard)
     
     except Exception as e:
-        return jsonify({"error": str(e)}), 500
+        print(f"Leaderboard error: {e}")
+        return jsonify({"error": "Failed to load leaderboard"}), 500
 
 @app.route('/health')
 def health():
