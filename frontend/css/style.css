@@ -1,0 +1,125 @@
+body {
+    font-family: 'Courier New', monospace;
+    background: #0f0f23;
+    color: #00cc00;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    color: #ffff00;
+    text-shadow: 2px 2px #ff00ff;
+}
+
+.subtitle {
+    color: #ff00ff;
+    font-style: italic;
+}
+
+.section {
+    background: #1a1a2e;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid #3333ff;
+    margin: 20px 0;
+}
+
+input {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    background: #000;
+    color: #0f0;
+    border: 2px solid #3333ff;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+}
+
+button {
+    background: #3333ff;
+    color: white;
+    border: 3px solid #ffff00;
+    padding: 10px 20px;
+    margin: 10px;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #ff00ff;
+    color: #ffff00;
+}
+
+#leaderboard {
+    text-align: left;
+}
+
+.leaderboard-item {
+    background: #2d2d44;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+}
+
+.menu-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.instruction-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    background: #2d2d44;
+    border-radius: 5px;
+}
+
+.control-key {
+    background: #3333ff;
+    color: white;
+    border: 2px solid #ffff00;
+    padding: 10px;
+    margin-right: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    min-width: 50px;
+    text-align: center;
+}
+
+.obstacle-list, .girls-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.obstacle-item, .girl-item {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    background: #2d2d44;
+    border-radius: 5px;
+}
+
+.obstacle-icon, .girl-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    border: 2px solid #3333ff;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 12px;
+}

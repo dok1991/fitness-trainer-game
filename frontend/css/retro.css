@@ -1,0 +1,49 @@
+/* 8-битный стиль */
+.retro-theme {
+    background: #0f0f23;
+    color: #00cc00;
+    font-family: 'Courier New', monospace;
+    image-rendering: pixelated;
+}
+
+.retro-theme h1 {
+    color: #ffff00;
+    text-shadow: 2px 2px #ff00ff;
+    text-align: center;
+}
+
+.retro-theme button {
+    background: #3333ff;
+    color: #ffffff;
+    border: 3px solid #ffff00;
+    padding: 10px 20px;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.retro-theme button:hover {
+    background: #ff00ff;
+    color: #ffff00;
+}
+
+.retro-theme input {
+    background: #000000;
+    color: #00ff00;
+    border: 2px solid #3333ff;
+    padding: 8px;
+    font-family: 'Courier New', monospace;
+}
+
+.pixel-art {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+}
+
+.retro-text {
+    font-family: 'Courier New', monospace;
+    color: #00ff00;
+    text-shadow: 1px 1px #000000;
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инструкция - Жора-Гоша: Шкурный Драйв</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/retro.css">
+</head>
+<body class="retro-theme">
+    <div class="container">
+        <header>
+            <h1>🚗💪 Инструкция</h1>
+            <p>Как играть в Жора-Гоша: Шкурный Драйв</p>
+        </header>
+
+        <div class="section">
+            <h2>🎮 Управление</h2>
+            <div class="instruction-item">
+                <div class="control-key">⬆️</div>
+                <span>ВВЕРХ - перейти на верхнюю полосу</span>
+            </div>
+            <div class="instruction-item">
+                <div class="control-key">⬇️</div>
+                <span>ВНИЗ - перейти на нижнюю полосу</span>
+            </div>
+        </div>
+		<div class="instruction-item">
+    <img src="assets/sprites/characters/car.png" alt="Машина" class="sprite-icon">
+    <span>Ваша машина с квадратными колесами</span>
+</div>
+
+        <div class="section">
+            <h2>🚧 Препятствия - Шкуры</h2>
+            <div class="obstacle-list">
+    <div class="obstacle-item">
+        <img src="assets/sprites/obstacles/herring.png" alt="Селёдка" class="sprite-icon">
+        <span><strong>Селёдка</strong> - сильно пахнущая шкура</span>
+    </div>
+    <div class="obstacle-item">
+        <img src="assets/sprites/obstacles/pig.png" alt="Свинья" class="sprite-icon">
+        <span><strong>Свинья</strong> - неухоженная шкура</span>
+    </div>
+    <div class="obstacle-item">
+        <img src="assets/sprites/obstacles/cow.png" alt="Корова" class="sprite-icon">
+        <span><strong>Корова</strong> - толстая шкура</span>
+    </div>
+    <div class="obstacle-item">
+        <img src="assets/sprites/obstacles/horse.png" alt="Лошадь" class="sprite-icon">
+        <span><strong>Лошадь</strong> - шкура с непропорциональными размерами</span>
+    </div>
+    <div class="obstacle-item">
+        <img src="assets/sprites/obstacles/cactus.png" alt="Кактус" class="sprite-icon">
+        <span><strong>Кактус</strong> - плоховыбритая шкура</span>
+    </div>
+    <div class="obstacle-item">
+        <img src="assets/sprites/obstacles/bush.png" alt="Куст" class="sprite-icon">
+        <span><strong>Куст</strong> - небритая шкура</span>
+    </div>
+</div>
+        </div>
+
+        <div class="section">
+            <h2>👧 Награды - Девушки</h2>
+            <div class="girls-list">
+    <div class="girl-item">
+        <img src="assets/sprites/girls/barbie.png" alt="Барби" class="sprite-icon">
+        <span><strong>Барби</strong> - 25 шкурцентов</span>
+    </div>
+    <div class="girl-item">
+        <img src="assets/sprites/girls/swag-girl.png" alt="Swag-девушка" class="sprite-icon">
+        <span><strong>Swag-девушка</strong> - 25 шкурцентов</span>
+    </div>
+    <div class="girl-item">
+        <img src="assets/sprites/girls/princess.png" alt="Принцесса" class="sprite-icon">
+        <span><strong>Принцесса</strong> - 25 шкурцентов</span>
+    </div>
+</div>
+        </div>
+
+        <div class="section">
+            <h2>🎯 Цель игры</h2>
+            <p>Собирайте девушек, чтобы зарабатывать <strong>шкурценты $</strong> и переходить на новые уровни скорости!</p>
+            <p>Избегайте препятствий - столкновение заканчивает игру.</p>
+        </div>
+
+        <div class="section">
+            <button onclick="startRealGame()" class="play-button">🎮 Начать игру!</button>
+            <button onclick="goBack()" class="back-button">← Назад</button>
+        </div>
+    </div>
+
+    <script>
+        function startRealGame() {
+            window.location.href = 'game.html';
+        }
+
+        function goBack() {
+            window.location.href = 'index.html';
+        }
+    </script>
+
+    <style>
+        .instruction-item {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            padding: 10px;
+            background: #2d2d44;
+            border-radius: 5px;
+        }
+
+        .control-key {
+            background: #3333ff;
+            color: white;
+            border: 2px solid #ffff00;
+            padding: 10px;
+            margin-right: 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            min-width: 50px;
+            text-align: center;
+        }
+
+        .obstacle-list, .girls-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .obstacle-item, .girl-item {
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            background: #2d2d44;
+            border-radius: 5px;
+        }
+
+        .obstacle-icon, .girl-icon {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            border: 2px solid #3333ff;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .play-button {
+            background: #00ff00;
+            color: #000;
+            font-size: 18px;
+            padding: 15px 30px;
+        }
+
+        .back-button {
+            background: #ff3333;
+            margin-left: 10px;
+        }
+		.sprite-icon {
+    width: 48px;
+    height: 48px;
+    margin-right: 15px;
+    image-rendering: pixelated;
+    border: 2px solid #3333ff;
+    border-radius: 5px;
+}
+    </style>
+</body>
+</html>
